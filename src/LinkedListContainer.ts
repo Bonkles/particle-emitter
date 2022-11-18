@@ -438,7 +438,7 @@ export class LinkedListContainer extends Container
             // TODO - lets either do all callbacks or all events.. not both!
             this.onChildrenChange();
             child.emit('removed', this);
-            this.emit('childRemoved', child, this);
+            this.emit('childRemoved', child, this, 0);
         }
 
         return children[0];
